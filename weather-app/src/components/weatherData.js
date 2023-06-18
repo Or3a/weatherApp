@@ -14,7 +14,7 @@ export const WeatherData = ({zipCode, weatherData, noData,refresh,
     fetch(`https://api.zippopotam.us/IT/${zipCode}`)
     .then((res) => res.json())
     .then((data) => { coordinates.lat = data.places[0].latitude; coordinates.lon = data.places[0].longitude;
-                      setIsLoading(true);  console.log(coordinates);})
+                      setIsLoading(true); })
 
 
     .then(() => {
@@ -43,7 +43,6 @@ export const WeatherData = ({zipCode, weatherData, noData,refresh,
 
       });
 
-    console.log(weatherData);
 
 }, [zipCode, refresh]);
 

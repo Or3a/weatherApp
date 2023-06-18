@@ -58,9 +58,22 @@ const WeatherApp = () => {
   const [textSecondaryColor, setTextSecondaryColor] = useState(null);
   const [backgroundColor, setBackgroundColor] = useState(null);
 
+
+
+
+
+  useEffect(() => {
+
+    // refresh every 5min
+    const interval = setInterval(() => setRefresh(true), 600000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+
   // if icon has n in the name, it's night time (ex. 01n = clear night)
   // if icon has d in the name, it's day time (ex. 01d = clear day)
-
   useEffect(() => {
 
     setRefresh(false);
@@ -77,22 +90,18 @@ const WeatherApp = () => {
       setBackgroundColor('#bcdae238');
     }
 
-
     setWeatherInfo({
       weather: weatherData?.weather[0].main, temp: Math.round(weatherData?.main.temp), minTemp: Math.floor(weatherData?.main.temp_min), maxTemp: Math.ceil(weatherData?.main.temp_max),
       feels_like: Math.round(weatherData?.main.feels_like), humidity: weatherData?.main.humidity, wind: weatherData?.wind.speed,
       city: weatherData?.name
     });
 
-
     if (weatherData?.weather[0].main === 'Clear' && weatherData?.weather[0].icon.includes('d')) {
       setSuggestion('Goditi il sole!'); setWeatherIcon(sunny);
     }
-
     else if (weatherData?.weather[0].main === 'Clear' && weatherData?.weather[0].icon.includes('n')) {
       setSuggestion('Goditi la notte'); setWeatherIcon(starry);
     }
-
     else if (weatherData?.weather[0].main === 'Clouds' && weatherData?.weather[0].icon.includes('d')) {
       setSuggestion('Non dimenticare la giacca'); setWeatherIcon(cloudyDay);
     }

@@ -24,3 +24,5 @@ Inside put the value of the weather api.
 WEATHER_API_KEY = 'digitValue'
 Thats it!
 </pre>
+
+### How it looks:
