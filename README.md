@@ -28,15 +28,13 @@ Thats it!
 ### How it looks:
 
 <p align="center">
-  <img src= "https://github.com/Or3a/weatherApp/assets/42150096/7eb65012-c481-4a71-a4d2-6d0022615880", width="50%"/>
+  <img src= "https://github.com/Or3a/weatherApp/assets/42150096/b6462d4b-7a61-4b1b-9d38-4cfa958d8cae", width="45%"/>
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src= "https://github.com/Or3a/weatherApp/assets/42150096/18c0654b-8011-4cbe-828b-8be315abeed5" width="45%">
+  <img src= "https://github.com/Or3a/weatherApp/assets/42150096/1a2500d7-0513-460e-86a6-c4ac038fea0c" width="45%">
 </p>
 
 <p align="center">
-  <img src= "https://github.com/Or3a/weatherApp/assets/42150096/fdcf85ca-3971-4038-825d-5f60b7ef548e" width="45%"/>
+  <img src= "https://github.com/Or3a/weatherApp/assets/42150096/f2a00581-4765-4636-9c7d-f9f4453f87b2" width="45%"/>
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img src= "https://github.com/Or3a/weatherApp/assets/42150096/13b9c00a-f563-4a1c-b129-75ac84000173" width="50%">
+  <img src= "https://github.com/Or3a/weatherApp/assets/42150096/fdc9836c-74c5-4467-9429-dc9464060cea" width="45%">
 </p>
-
-
