@@ -19,7 +19,7 @@ The app should be accessible from smartphones and allow users to enter a ZIP cod
 
 <pre>
 Install npm install react-dotenv
-Create a .env.local file in the root of you repository
+Create a .env file in the root of you repository
 Inside put the value of the weather api.
 WEATHER_API_KEY = 'digitValue'
 Thats it!
